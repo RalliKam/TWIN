@@ -4,6 +4,10 @@ TWIN is a two-panel file manager for Z80 computers running CP/M. Its
 layout and keyboard-driven workflow are inspired by the classic Norton
 Commander.
 
+<img width="819" height="508" alt="Screenshot" src="https://github.com/user-attachments/assets/6907f9ee-4feb-4e7c-8f01-8aa106d03270" />
+
+
+
 The program is written in Borland Turbo Pascal 3.0A for CP/M-80 and is
 intended for CP/M 2.2 and CP/M 3.0. It uses a two-panel interface to
 browse drives and perform common file operations without leaving the
