@@ -6,6 +6,11 @@ Commander.
 
 <img width="819" height="508" alt="Screenshot" src="https://github.com/user-attachments/assets/6907f9ee-4feb-4e7c-8f01-8aa106d03270" />
 
+Update
+
+Files with date
+
+<img width="656" height="432" alt="Screenshot2" src="https://github.com/user-attachments/assets/96acd106-1f4b-49f7-9fa6-3e8b1fce1173" />
 
 
 The program is written in Borland Turbo Pascal 3.0A for CP/M-80 and is
