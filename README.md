@@ -4,13 +4,7 @@ TWIN is a two-panel file manager for Z80 computers running CP/M. Its
 layout and keyboard-driven workflow are inspired by the classic Norton
 Commander.
 
-<img width="819" height="508" alt="Screenshot" src="https://github.com/user-attachments/assets/6907f9ee-4feb-4e7c-8f01-8aa106d03270" />
-
-Update
-
-Files with date
-
-<img width="656" height="432" alt="Screenshot2" src="https://github.com/user-attachments/assets/96acd106-1f4b-49f7-9fa6-3e8b1fce1173" />
+<img width="799" height="434" alt="grafik" src="https://github.com/user-attachments/assets/5bb6b56f-71d6-46bd-a5c2-779360fd0392" />
 
 
 The program is written in Borland Turbo Pascal 3.0A for CP/M-80 and is
@@ -54,6 +48,15 @@ uses ANSI/VT escape sequences for colors and highlighting.
 The arrow keys are read as ANSI/VT escape sequences. Their behavior
 therefore depends on the terminal sending the expected cursor-key
 sequences.
+
+## Usage
+
+Use the `/O` (or `/o`) command-line parameter to display the date:
+
+```text
+TWIN /O
+```
+
 
 ## File lists
 
