@@ -12,6 +12,7 @@ BufRecs = 8;
 ESC = #27;
 type
 FileName = string[12];
+FileSpec = string[16];
 FreeString = string[16];
 DateString = string[8];
 var
@@ -585,10 +586,35 @@ end
 else
 StatusText := 'Drive change cancelled.'
 end;
+procedure ShowCopyNotice(SrcName, DstName: FileSpec);
+var
+I: Integer;
+begin
+Write(ESC,'[1;37;44m');
+GotoXY(17, 9);
+Write('+==============================================+');
+GotoXY(17, 10);
+Write('|               Copy starts next               |');
+GotoXY(17, 11);
+Write('| From: ', SrcName);
+for I := 1 to 39 - Length(SrcName) do
+Write(' ');
+Write('|');
+GotoXY(17, 12);
+Write('| To:   ', DstName);
+for I := 1 to 39 - Length(DstName) do
+Write(' ');
+Write('|');
+GotoXY(17, 13);
+Write('|               Copying next...                |');
+GotoXY(17, 14);
+Write('+==============================================+');
+Write(ESC,'[0m',ESC,'[37;40m')
+end;
 procedure CopySelected;
 var
 SrcPanel, DstPanel, I, RecsRead, Err: Integer;
-SrcName, DstName: string[16];
+SrcName, DstName: FileSpec;
 SourceFile, DestFile: file;
 Buffer: array[0..1023] of Byte;
 Ch: Char;
@@ -615,6 +641,7 @@ if SrcName = DstName then
 StatusText := 'Source and destination are identical.'
 else
 begin
+ShowCopyNotice(SrcName, DstName);
 Assign(SourceFile, SrcName);
 {$I-}
 Reset(SourceFile);
@@ -646,6 +673,8 @@ Write('Destination exists. Overwrite (Y/N)? ');
 ClrEol;
 Read(Kbd, Ch);
 Write(ESC,'[0m',ESC,'[37;40m');
+GotoXY(1, 23);
+ClrEol;
 if (Ch = 'Y') or (Ch = 'y') then
 Proceed := True
 else
