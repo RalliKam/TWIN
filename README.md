@@ -93,7 +93,8 @@ escape sequences for screen colors and highlighting, so configure the
 terminal or emulator for a compatible VT mode.
 
 ## Build Environment
-No modern cross-compilers or emulators were used in the making of this binary. The source code is compiled natively on genuine vintage CPU: an Z80 computer running the original Turbo Pascal 3.0A compiler.
+No modern cross-compilers or emulators were used in the making of this binary. The source code is compiled natively on genuine vintage CPU: an Z80 computer (MBC3) running the original Turbo Pascal 3.0A compiler.
+
 
 <img width="1632" height="1224" alt="grafik" src="https://github.com/user-attachments/assets/f760d255-1f72-48be-af13-0be68045b61a" />
 
