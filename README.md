@@ -34,16 +34,15 @@ uses ANSI/VT escape sequences for colors and highlighting.
 
 ## Keyboard commands
 
-| Key | Command | Description |
-
-| Up / Down          | Move selection  | Moves the highlight through the active panel's file list. The list scrolls when the selection reaches the visible panel edge. |
-| `TAB`              | Switch panel   | Makes the other panel active. |
-| `C` | Copy         | Copies the selected file to the same drive-independent filename on the other panel's drive. If a destination file already exists, TWIN asks before overwriting it. |
-| `D` | Delete       | Asks for confirmation, then deletes the selected file from the active drive. |
-| `R` | Rename       | Prompts for a new CP/M 8.3 filename, such as `NOTES.TXT`. |
-| `S` | Show         | Opens the selected non-`.COM` file in the text viewer. |
-| `L` | Change drive | Prompts for a drive letter from A: to P: and reloads the active panel. Press `ESC` to cancel. |
-| `Q` | Quit         | Leaves TWIN and returns to CP/M. |
+| Key | Command | Description 
+| Up / Down| Move selection | Moves the highlight through the active panel's file list. The list scrolls when the selection reaches the visible panel edge.
+| `TAB`| Switch panel| Makes the other panel active.
+| `C` | Copy| Copies the selected file to the same drive-independent filename on the other panel's drive.
+| `D` | Delete| Asks for confirmation, then deletes the selected file from the active drive. |
+| `R` | Rename| Prompts for a new CP/M 8.3 filename, such as `NOTES.TXT`.
+| `S` | Show| Opens the selected non-`.COM` file in the text viewer.
+| `L` | Change drive | Prompts for a drive letter from A: to P: and reloads the active panel. Press `ESC` to cancel.
+| `Q` | Quit | Leaves TWIN and returns to CP/M.
 
 The arrow keys are read as ANSI/VT escape sequences. Their behavior
 therefore depends on the terminal sending the expected cursor-key
